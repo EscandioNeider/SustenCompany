@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style4.css">
+    <title>Ajuda e Contato</title>
+</head>
+
+<body>
+
+    <body class="background">
+        <header>
+            <h2 class="sustencon"> SustenCompany </h2>
+            <nav>
+                <ul class="navegação">
+                    <li><a href="index.html"> Home </a></li>
+                    <li><a href="index2.html"> Login </a></li>
+                    <li><a href="index3.html"> Cadastro </a></li>
+                    <li><a href="index4.html"> Ajuda e Contatos </a></li>
+
+                </ul>
+            </nav>
+        </header>
+
+        <div class="dev">
+            <h1 class="titulo">Ajuda e Ouvidoria</h1>
+            <p class="subtitulo">Estamos aqui para ajudar! Se você tiver alguma dúvida ou preocupação, por favor,
+                preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
+        </div>
+        <form id="mensagemForm">
+            <div class="campos">
+                <label for="nome" class="campotexto">Nome:</label>
+                <input class="valor" type="text" id="nome" name="nome" required>
+                <br><br>
+                <label for="email" class="campotexto">Email:</label>
+                <input class="valor" type="email" id="email" name="email" required>
+                <br><br>
+                <label for="mensagem" class="campotexto">Mensagem:</label>
+                <textarea class="valor" id="mensagem" name="mensagem" rows="4" required></textarea>
+                <br><br>
+                <br><br>
+                <input class="botao" type="submit" value="Enviar">
+        </form>
+
+        <script>
+            document.getElementById('mensagemForm').addEventListener('submit', function(event) {
+              event.preventDefault(); 
+          
+              alert("Obrigado pelo Feedback!");
+          
+              
+            });   
+          </script>
+        </div>

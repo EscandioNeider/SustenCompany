@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body class="background">
+    <header>
+        <h2 class="sustencon"> SustenCompany </h2>
+        <nav>
+            <ul class="navegação">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="index2.html"> Login </a></li>
+                <li><a href="index3.html"> Cadastro </a></li>
+                <li><a href="index4.html"> Ajuda e Contatos </a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <div class="divLogin">
+        <h1 class="titulo">Login</h1>
+        <form id="loginForm">
+            <div class="campos">
+                <label class="legenda">E-mail ou tel</label>
+                <input class="valor" type="text" placeholder="Digite o seu e-mail ou número de telefone." required>
+            </div>
+            <br><br>
+            <div class="campos">
+                <label class="legenda">Senha</label>
+                <input class="valor" type="password" placeholder="Digite a sua senha" required>
+            </div>
+            <br><br>
+            <input class="botao" type="submit" value="Enviar">
+            <br><br>
+            <a href="index3.html" class="cad">Não tem uma conta? Cadastre-se!</a>
+        </form>
+
+        <script>
+            document.getElementById('loginForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                var loginSuccess = true;
+
+                if (loginSuccess) {
+                    alert("Login realizado com sucesso!");
+
+                } else {
+                    alert("Erro ao fazer login. Por favor, verifique suas credenciais e tente novamente.");
+                }
+
+            }); 
+        </script>
+    </div>
+
+</body>
+
+</html>

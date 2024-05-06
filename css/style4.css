@@ -1,0 +1,114 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+}
+header{
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(170, 231, 201, 0.411);}
+
+.sustencon{ 
+    text-align: center;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: hsla(155, 67%, 35%, 0.918);
+}
+    
+.navegação{
+    justify-content: center;
+    text-decoration: none;
+    display: flex;}
+
+.navegação li{
+    margin: 20px;
+    justify-content: center;
+    list-style: none;}
+
+.navegação li a{
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: hsla(155, 67%, 35%, 0.918);}
+
+.navegação li a:hover{
+    background-color: hsla(155, 64%, 66%, 0.918);
+    color:  hsla(155, 68%, 28%, 0.918);}
+
+.background {
+    background-image: url(../img/skincareandplants2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;} 
+
+.dev{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    width: 80%; 
+    max-width: 800px; 
+    margin: 0 auto;
+    }
+    
+.titulo{
+    font-size: 35px;
+    text-align: center;
+    color: hsla(155, 67%, 35%, 0.918);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;}
+    
+.subtitulo{
+    font-size: 25px;
+    color: hsla(155, 67%, 35%, 0.918);
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px; 
+    text-align: center;
+    }
+
+    
+.campos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.campotexto{ 
+    font-size: 24px;
+    color: hsla(155, 67%, 35%, 0.918);
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px; 
+    text-align: center;}
+
+.valor{
+    width: 15%;
+    background-color: hsla(126, 41%, 67%, 0.918);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    color: hsla(155, 67%, 35%, 0.918);
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    }
+
+.botao{  
+    color: #bbf3c9;
+    background-color: hsla(155, 67%, 35%, 0.918);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    border: none;
+    border-radius: 10px;
+    height: 35px;
+    width: 150px; 
+    cursor: pointer;
+}

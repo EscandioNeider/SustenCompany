@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style3.css">
+  <title>Cadastro</title>
+</head>
+
+<body class="background">
+  <header>
+    <h2 class="sustencon"> SustenCompany </h2>
+    <nav>
+      <ul class="navegação">
+        <li><a href="index.html"> Home </a></li>
+        <li><a href="index2.html"> Login </a></li>
+        <li><a href="index3.html"> Cadastro </a></li>
+        <li><a href="index4.html"> Ajuda e Contatos </a></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <div class="divCadastro">
+    <form action="index.html" id="cadastroForm">
+
+      <h1 class="titulo">Cadastro</h1>
+
+      <div class="campos">
+        <label class="legenda" for="genero">Gênero</label>
+        <select class="valor" name="genero" id="genero" required>
+          <option value="">Selecione...</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="outro">Outro</option>
+        </select>
+      </div>
+      <br>
+
+      <div class="campos">
+        <label class="legenda" for="nome">Primeiro Nome</label>
+        <input class="valor" type="text" id="nome" placeholder="Digite o seu nome." required>
+      </div>
+      <br>
+      <div class="campos">
+        <label class="legenda" for="sobrenome">Sobrenome</label>
+        <input class="valor" type="text" id="sobrenome" placeholder="Digite o seu sobrenome." required>
+      </div>
+      <br>
+      <div class="campos">
+        <label class="legenda" for="telefone">Telefone</label>
+        <input class="valor" type="text" id="telefone" placeholder="Digite o seu número." required>
+      </div>
+      <br>
+      <div class="campos">
+        <label class="legenda" for="senha">Senha</label>
+        <input class="valor" type="password" id="senha" placeholder="Digite a sua senha." required>
+      </div>
+      <br>
+      <div class="campos">
+        <label class="legenda" for="email">Email</label>
+        <input class="valor" type="email" id="email" placeholder="Digite o seu email." required>
+      </div>
+      <br>
+      <div class="campos">
+        <label class="legenda" for="dataNascimento">Data de nascimento</label>
+        <input class="valor" type="date" id="dataNascimento" placeholder="Digite a sua data de nascimento" required>
+      </div>
+      <br>
+      <div class="checkbox-container">
+        <div class="checkbox">
+          <input type="checkbox" id="consentimento" name="consentimento" required>
+          <label for="consentimento" class="checkbox-label">Desejo disponibilizar minhas informações de email e telefone
+            com a consultoria e confirmo ser maior de 18 anos.</label>
+
+        </div>
+      </div>
+
+      <br><br>
+      <input class="botao" type="submit" value="Enviar">
+
+  </div>
+  </div>
+</body>
+<script>
+  document.getElementById('cadastroForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    alert("Cadastro realizado com sucesso!");
+
+    
+  });   
+</script>
+</html>
